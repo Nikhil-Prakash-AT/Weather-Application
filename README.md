@@ -51,6 +51,7 @@ Run Locally
 Just open the index.html file in your browser or use a live server:
 
 npx live-server
+
 (Recommended: VS Code Live Server Extension)
 
 🧩 Folder Structure
@@ -74,10 +75,15 @@ npx live-server
 💡 Learning Outcomes
 
    Working with REST APIs (OpenWeather)
+   
    Asynchronous JS (fetch, async/await)
+   
    DOM manipulation and dynamic rendering
+   
    Data visualization using Chart.js
+   
    CSS animations and weather-based transitions
+   
    Handling user geolocation securely
 
 💻 Author
@@ -88,9 +94,14 @@ Nikhil Prakash A T
 🕸️ https://github.com/Nikhil-Prakash-AT
 
 ❤️ Acknowledgements
+
    OpenWeatherMap API
+   
    Chart.js
+   
    Leaflet Maps
+   
    Google Fonts
+   
 
 ⭐ If you like this project, consider giving it a star on GitHub!
