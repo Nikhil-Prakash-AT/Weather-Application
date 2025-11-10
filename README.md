@@ -59,20 +59,31 @@ npx live-server
 
 🧩 Folder Structure
 📦 weather-app
+
  ┣ 📜 index.html
+ 
  ┣ 🎨 style.css
+ 
  ┣ ⚙️ script.js
+ 
  ┣ 🖼️ weather pro 1.png
+ 
  ┣ 🖼️ weather pro 2.png
+ 
  ┣ 🖼️ weather pro 3.png
+ 
  ┣ 🖼️ weather pro 4.png
+ 
  ┗ 📄 README.md
 
 🌈 Future Enhancements
 
 🔹 Add lightning + thunder sound effects during storms
+
 🔹 Include UV index & sunrise/sunset graphs
+
 🔹 Add weekly average comparison chart
+
 🔹 Progressive Web App (PWA) support for offline mode
 
 💡 Learning Outcomes
