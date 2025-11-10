@@ -9,53 +9,72 @@ Experience live weather updates with stunning effects like rain, snow, fog, sunr
 
 ✨ Features
 
-✅ Live Weather Data — Real-time temperature, humidity, pressure, and wind.
-✅ Dynamic Backgrounds — Auto-changing gradients for day, night, rain, fog, snow, etc.
-✅ Realistic Weather Effects —
- 🌧️ Falling rain overlay
- ⚡ Lightning flashes
- ❄️ Snow animation
- 🌫️ Fog layers
-✅ Location Detection — Instantly shows weather for your current location.
-✅ Search Any City — Global coverage using OpenWeather’s geolocation API.
-✅ Temperature Charts — Interactive 24-hour temperature line chart using Chart.js.
-✅ Mini Map Integration — Powered by Leaflet with live map previews.
-✅ Air Quality Index (AQI) — Displays real-time AQI with pollutant details.
-✅ Dark / Light Mode Toggle 🌙☀️
-✅ Responsive Design — Optimized for mobile, tablet, and desktop screens.
+  ✅ Live Weather Data — Real-time temperature, humidity, pressure, and wind.
+
+  ✅ Dynamic Backgrounds — Auto-changing gradients for day, night, rain, fog, snow, etc.
+
+  ✅ Realistic Weather Effects —
+
+    🌧️ Falling rain overlay
+ 
+    ⚡ Lightning flashes
+ 
+    ❄️ Snow animation
+ 
+    🌫️ Fog layers
+ 
+  ✅ Location Detection — Instantly shows weather for your current location.
+
+  ✅ Search Any City — Global coverage using OpenWeather’s geolocation API.
+
+  ✅ Temperature Charts — Interactive 24-hour temperature line chart using Chart.js.
+
+  ✅ Mini Map Integration — Powered by Leaflet with live map previews.
+
+  ✅ Air Quality Index (AQI) — Displays real-time AQI with pollutant details.
+
+  ✅ Dark / Light Mode Toggle 🌙☀️
+
+  ✅ Responsive Design — Optimized for mobile, tablet, and desktop screens.
 
 🧠 Tech Stack
-Layer	Technologies
-Frontend	HTML5, CSS3, Vanilla JavaScript
-APIs	OpenWeather API
 
-Charts	Chart.js
-Maps	Leaflet.js
-Icons / Fonts	Google Fonts (Inter), Emojis for clarity
-Deployment	GitHub Pages / Netlify / Vercel ready
+  Layer	Technologies
+
+  Frontend	HTML5, CSS3, Vanilla JavaScript
+
+  APIs	OpenWeather API
+
+  Charts	Chart.js
+
+  Maps	Leaflet.js
+
+  Icons / Fonts	Google Fonts (Inter), Emojis for clarity
+
+  Deployment	GitHub Pages / Netlify / Vercel ready
+
 ⚙️ Installation & Setup
 
-Clone the Repository
+  Clone the Repository
 
-git clone https://github.com/Nikhil-Prakash-AT/Weather-Application.git
-cd weather-app
+  git clone https://github.com/Nikhil-Prakash-AT/Weather-Application.git
+  cd weather-app
+
+  Get Your API Key
+
+  Sign up at OpenWeather
+
+  Copy your API key and paste it into the script.js file:
+
+  const API_KEY = "YOUR_API_KEY_HERE";
 
 
-Get Your API Key
+  Run Locally
+  Just open the index.html file in your browser or use a live server:
 
-Sign up at OpenWeather
+  npx live-server
 
-Copy your API key and paste it into the script.js file:
-
-const API_KEY = "YOUR_API_KEY_HERE";
-
-
-Run Locally
-Just open the index.html file in your browser or use a live server:
-
-npx live-server
-
-(Recommended: VS Code Live Server Extension)
+  (Recommended: VS Code Live Server Extension)
 
 🧩 Folder Structure
 📦 weather-app
