@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Weather Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- WEATHER EFFECT OVERLAYS -->
+   
+<div id="rain-light" class="rain-layer hidden"></div>
+<div id="rain-medium" class="rain-layer hidden"></div>
+<div id="rain-heavy" class="rain-layer hidden"></div>
+
+<div id="lightning-flash" class="flash-layer hidden"></div>
+
+<div id="snow-container" class="snow-layer hidden"></div>
+
+<div id="fog-layer-1" class="fog-layer hidden"></div>
+<div id="fog-layer-2" class="fog-layer hidden"></div>
+
+<div id="sun-glow" class="sun-glow hidden"></div>
+
+  <div class="bg-gradient"></div>
+
+  <header class="container header">
+  <div class="brand">
+  <h1 class="brand-title">Weather</h1>
+</div>
+    <div class="header-actions">
+      <button id="locButton" class="chip">📍 Current Location</button>
+      <button id="themeToggle" class="chip"><span id="themeIcon">🌙</span></button>
+    </div>
+  </header>
+  <main class="container">
+    
+    <section class="search-card glass">
+      <form id="searchForm" class="search">
+        <input id="cityInput" type="text" placeholder="Search city (e.g., Kochi)" />
+        <button type="submit" class="btn">Search</button>
+      </form>
+      <div class="helper">Tip: Press <kbd>Enter</kbd> to search</div>
+    </section>
+
+    <section id="status" class="status"></section>
+
+    
+    <section id="result" class="result hidden">
+      <div class="card glass main-panel">
+        <div class="main-top">
+          <div class="left-info">
+            <div id="clockTime" class="clock-time">🕒 --:--</div>
+            <div id="clockDate" class="clock-date">📅 --</div>
+          </div>
+            
+
+          <div class="center-weather">
+            <div id="iconWrap" class="icon-wrap"></div>
+            <div class="compact">
+              <div id="compactTemp" class="compact-temp">—°C / —°F • —</div>
+              <div id="compactMeta" class="compact-meta">Feels like —°C • Humidity —%</div>
+            </div>
+          </div>
+
+          <div class="mini-map-wrap">
+            <div id="miniMap" class="mini-map"></div>
+            <small class="map-tip">(click map to load weather)</small>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="card__grid">
+          <div>
+            <ul class="facts">
+              <li><span>Feels like</span><strong id="feels">—°C</strong></li>
+              <li><span>Humidity</span><strong id="humidity">—%</strong></li>
+              <li><span>Wind</span><strong id="wind">— km/h</strong></li>
+              <li><span>Pressure</span><strong id="pressure">— hPa</strong></li>
+            </ul>
+          </div>
+
+          <div class="right-widgets">
+            <div class="card mini glass">
+              <h3 class="card-title">5-Day Forecast</h3>
+              <div id="dailyRow" class="row compact"></div>
+            </div>
+
+            <div class="card mini glass">
+              <h3 class="card-title">Next 12 Hours</h3>
+              <div id="hourRow" class="row compact"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <section class="row-small">
+        <div class="card mini glass">
+          <h3 class="card-title">Temp 24h</h3>
+          <canvas id="tempChart" height="120"></canvas>
+        </div>
+
+        <div class="card mini glass">
+          <h3 class="card-title">Air Quality</h3>
+          <div><span id="aqiBadge" class="aqi-badge">AQI —</span></div>
+          <div id="aqiDetails" class="aqi-details">—</div>
+          <div id="alertsBox" class="alerts">No active alerts.</div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Built with ♥ using free OpenWeather APIs.</p>
+  </footer>
+
+  <template id="spinnerTmpl">
+    <div class="spinner"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
