@@ -34,7 +34,7 @@ Deployment	GitHub Pages / Netlify / Vercel ready
 
 Clone the Repository
 
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/Nikhil-Prakash-AT/Weather-Application.git
 cd weather-app
 
 
