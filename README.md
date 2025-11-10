@@ -1,5 +1,8 @@
 🌦️ Weather — A Modern Real-Time Weather App
 
+## 🌍 Live Demo
+👉 [View the Live Weather App](https://nikhil-prakash-at.github.io/Weather-Application/)
+
 🚀 A sleek, interactive and visually dynamic weather web app built using HTML, CSS, and JavaScript with real-time data from the OpenWeather API.
 
 Experience live weather updates with stunning effects like rain, snow, fog, sunrise glow, and lightning — all changing dynamically based on the forecast 🌧️❄️⚡🌫️🌞
